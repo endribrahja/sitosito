@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply transition-colors duration-300;
+}
+
+body {
+  @apply bg-resell-light text-resell-dark font-body m-0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display;
+}
+
+button {
+  @apply transition-all duration-300;
+}
+
+button:active {
+  @apply scale-95;
+}
+
+/* Scrollbar personalizzata */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-resell-light;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-resell-sage rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-resell-dark;
+}
